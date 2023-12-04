@@ -1,38 +1,264 @@
-.App {
-  text-align: center;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+a {
+    text-decoration: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* Header.js */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EBE5E5;
+    padding: 20px 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Nav.js */
+.menu_icon {
+    display: block;
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333333;
+    margin: 5px 0;
+}
+.nav-links {
+    display: none;
+}
+.nav-links.visible {
+    flex-direction: column;
+    position: absolute;
+    top: 83px;
+    right: 0;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background-color: rgba(51, 51, 51, 0.7);
+    z-index: 1000;
+}
+.nav-links li {
+    line-height: 5;
+}
+.nav-links a {
+    color: #EBE5E5;
+    font-family: Karla;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.nav-links a:hover {
+    color: rgba(235, 229, 229, 0.7)
+}
+
+/* Main.js */
+.banner {
+    background-color: #495E57;
+    height: 380px;
+    padding: 50px;
+    justify-content: center;
+    text-align: center;
   }
+.banner-title {
+    color: #F4CE14;
+    font-size: 3rem;
+    font-weight: normal;
+    font-family: Inter;
+}
+.banner-subtitle {
+    color: #EDEFEE;
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: Inter;
+    padding: 20px 0;
+}
+.banner-description {
+    color: #EDEFEE;
+    font-size: 1.3em;
+    font-weight: normal;
+    font-family: Inter;
+    line-height: 2;
+    padding-bottom: 30px;
+}
+.reserve-button {
+    color: #333333;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: Inter;
+    background-color: #F4CE14;
+    height: 70px;
+    width: 250px;
+    border-radius: 16px;
+    border: none;
+}
+.restauranfood-img {
+    display: none;
+}
+.special-menu {
+    height: 100%;
+    padding: 50px;
+    background-color: #EBE5E5;
+}
+.special-menu-title {
+    color: #333333;
+    font-size: 3em;
+    font-weight: 500;
+    font-family: Markazi;
+    text-align: center;
+    margin: 100px 0;
+}
+.dish-card {
+    width: 100%;
+    height: 450px;
+    background-color: #EDEFEE;
+    margin-bottom: 5vh;
+}
+.dish-card:last-child {
+    margin-bottom: 0;
+}
+.dish-image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1em 1.5em;
+}
+.dish-title {
+    font-family: Karla;
+    color: #333333;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+.dish-pricing {
+    font-family: Karla;
+    color: #FF0303;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.dish-description {
+    font-family: Karla;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0 1.5em;
+}
+footer {
+    display: flex;
+    flex: 1 1 auto;
+    background-color: #495E57;
+    padding: 50px 50px;
+}
+footer a {
+    color: #EDEFEE;
+    font-family: Karla;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 3;
+}
+footer a:hover {
+    color: rgba(235, 229, 229, 0.7)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (min-width: 960px) {
+    /* Nav.js */
+    .nav-links {
+        display: flex;
+    }
+    .nav-links li {
+        padding: 0 10px;
+        line-height: 0;
+    }
+    .nav-links a {
+        color: #333333;
+    }
+    .nav-links a:hover {
+        color: rgba(51, 51, 51, 0.5)
+    }
+    .menu_icon{
+        display: none;
+        cursor: pointer;
+    }
+    .banner {
+        display: flex;
+        height: 400px;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .banner-description {
+        width: 20em;
+    }
+    .restauranfood-img{
+        display: flex;
+        height: 80vh;
+        border-radius: 5%;
+    }
+    .special-menu-title {
+        text-align: left;
+        margin-top: 100px;
+    }
+    .dish-lists {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .dish-card {
+        width: 25vw;
+        height: 500px;
+        margin: 50px 0;
+        background-color: #EDEFEE;
+    }
 }
