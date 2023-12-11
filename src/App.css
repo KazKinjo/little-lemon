@@ -56,18 +56,19 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #EBE5E5;
-    padding: 20px 50px;
+    padding: 1.25rem 3rem;
 }
 
 /* Nav.js */
 .menu_icon {
     display: block;
+    cursor: pointer;
 }
 .bar {
-    width: 25px;
-    height: 3px;
+    width: 1.5rem;
+    height: 0.2rem;
     background-color: #333333;
-    margin: 5px 0;
+    margin: 0.3rem 0;
 }
 .nav-links {
     display: none;
@@ -75,7 +76,7 @@ header {
 .nav-links.visible {
     flex-direction: column;
     position: absolute;
-    top: 83px;
+    top: 5.1rem;
     right: 0;
     width: 100%;
     align-items: center;
@@ -99,8 +100,8 @@ header {
 /* Main.js */
 .banner {
     background-color: #495E57;
-    height: 380px;
-    padding: 50px;
+    height: 23.7rem;
+    padding: 3rem;
     justify-content: center;
     text-align: center;
   }
@@ -115,7 +116,7 @@ header {
     font-size: 2rem;
     font-weight: normal;
     font-family: Inter;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 .banner-description {
     color: #EDEFEE;
@@ -123,7 +124,7 @@ header {
     font-weight: normal;
     font-family: Inter;
     line-height: 2;
-    padding-bottom: 30px;
+    padding-bottom: 2rem;
 }
 .reserve-button {
     color: #333333;
@@ -131,17 +132,20 @@ header {
     font-weight: normal;
     font-family: Inter;
     background-color: #F4CE14;
-    height: 70px;
-    width: 250px;
-    border-radius: 16px;
+    height: 4.5rem;
+    width: 15.5rem;
+    border-radius: 1rem;
     border: none;
+}
+.reserve-button:hover {
+    cursor: pointer;
 }
 .restauranfood-img {
     display: none;
 }
 .special-menu {
     height: 100%;
-    padding: 50px;
+    padding: 3rem;
     background-color: #EBE5E5;
 }
 .special-menu-title {
@@ -150,11 +154,11 @@ header {
     font-weight: 500;
     font-family: Markazi;
     text-align: center;
-    margin: 100px 0;
+    margin: 6rem 0;
 }
 .dish-card {
     width: 100%;
-    height: 450px;
+    height: 28rem;
     background-color: #EDEFEE;
     margin-bottom: 5vh;
 }
@@ -163,7 +167,7 @@ header {
 }
 .dish-image{
     width: 100%;
-    height: 250px;
+    height: 15.5rem;
     object-fit: cover;
     object-position: center;
 }
@@ -195,21 +199,26 @@ header {
     padding: 0 1.5em;
 }
 footer {
-    display: flex;
-    flex: 1 1 auto;
     background-color: #495E57;
-    padding: 50px 50px;
+    padding: 1.5rem;
 }
-footer a {
+footer p {
     color: #EDEFEE;
     font-family: Karla;
-    font-size: 1rem;
+    font-size: 0.5rem;
     font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 3;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    justify-content: center;
 }
-footer a:hover {
-    color: rgba(235, 229, 229, 0.7)
+
+.booking-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.booking-form{
+    align-items: center;
 }
 
 
@@ -217,9 +226,10 @@ footer a:hover {
     /* Nav.js */
     .nav-links {
         display: flex;
+        transition: all 0.5 ease-in-out;
     }
     .nav-links li {
-        padding: 0 10px;
+        padding: 0 0.6rem;
         line-height: 0;
     }
     .nav-links a {
@@ -230,11 +240,10 @@ footer a:hover {
     }
     .menu_icon{
         display: none;
-        cursor: pointer;
     }
     .banner {
         display: flex;
-        height: 400px;
+        height: 25rem;
         justify-content: space-between;
         text-align: left;
     }
@@ -248,7 +257,7 @@ footer a:hover {
     }
     .special-menu-title {
         text-align: left;
-        margin-top: 100px;
+        margin-top: 6rem;
     }
     .dish-lists {
         display: flex;
@@ -257,8 +266,8 @@ footer a:hover {
     }
     .dish-card {
         width: 25vw;
-        height: 500px;
-        margin: 50px 0;
+        height: 30rem;
+        margin: 3rem 0;
         background-color: #EDEFEE;
     }
 }

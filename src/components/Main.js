@@ -1,32 +1,30 @@
-import { useState } from 'react';
 import restauranfood from '../images/restauranfood.jpg';
 import greeksalad from '../images/greek salad.jpg';
 import bruchetta from '../images/bruchetta.svg';
 import lemondessert from '../images/lemon dessert.jpg';
 
-const Header = () => {
-    const [reserveButton, onReserveButton] = useState(false);
+import { useNavigate } from 'react-router-dom';
+
+export default function Header() {
     const handleClick = () => {
-    };
+        console.log('Hello')
+    }
 
     return (
         <main className='main'>
             <article className='banner'>
                 <section>
-                    <h1 className='banner-title'>
-                        Little Lemon
-                    </h1>
-                    <h2 className='banner-subtitle'>
-                        Chicago
-                    </h2>
+                    <h1 className='banner-title'>Little Lemon</h1>
+                    <h2 className='banner-subtitle'>Chicago</h2>
                     <p className='banner-description'>
                         We are a family owned Mediterranean restaurant, focused
                         on traditional recipes served with a modern twist.
                     </p>
                     <button
                         className='reserve-button'
-                        onClick={handleClick()}>
-                        Reserve Table
+                        onClick={handleClick}
+                    >
+                        Book Now
                     </button>
                 </section>
                 <section>
@@ -96,5 +94,3 @@ const Header = () => {
         </main>
     );
 }
-
-export default Header;
