@@ -1,14 +1,13 @@
+import './Header.css';
 import Nav from './Nav';
 import Logo from '../images/Logo.svg';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+export default function Header() {
     return (
         <header>
-            <Link to="/"><img src={Logo} alt="logo" /></Link>
+            <Link to="/"><img src={Logo} height="45" alt="logo" /></Link>
             <Nav />
         </header>
     );
 }
-
-export default Header;

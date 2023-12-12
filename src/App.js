@@ -1,19 +1,17 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
-import BookingPage from './components/BookingPage';
+import Home from './Home';
+import BookingScreen from './BookingScreen';
 
-const App = () => {
+export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/reservations' element={<BookingPage />} />
+          <Route path='/reservations' element={<BookingScreen />} />
         </Routes>
       </BrowserRouter>
     </div>
   );
 }
-
-export default App;

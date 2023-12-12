@@ -1,0 +1,70 @@
+.banner {
+    background-color: #495E57;
+    height: 23.7rem;
+    padding: 3rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+.banner-title {
+    color: #F4CE14;
+    font-size: 3rem;
+    font-weight: normal;
+    font-family: Inter;
+}
+
+.banner-subtitle {
+    color: #EDEFEE;
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: Inter;
+    padding: 1.25rem 0;
+}
+
+.banner-description {
+    color: #EDEFEE;
+    font-size: 1.3em;
+    font-weight: normal;
+    font-family: Inter;
+    line-height: 2;
+    padding-bottom: 2rem;
+}
+
+.reserve-button {
+    color: #333333;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: Inter;
+    background-color: #F4CE14;
+    height: 4.5rem;
+    width: 15.5rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.reserve-button:hover {
+    cursor: pointer;
+}
+
+.restauranfood-img {
+    display: none;
+}
+
+@media (min-width: 960px) {
+    .banner {
+        display: flex;
+        height: 25rem;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .banner-description {
+        width: 20em;
+    }
+    
+    .restauranfood-img{
+        display: flex;
+        height: 80vh;
+        border-radius: 5%;
+    }
+}
